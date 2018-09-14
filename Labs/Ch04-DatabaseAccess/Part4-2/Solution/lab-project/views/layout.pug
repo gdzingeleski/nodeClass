@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title Student Management App
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/custom.css')
+  body
+    header.page
+      h1 Student Manager Application
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href="/") Home
+        li
+          a(href="/students") Students
+        li
+          a(href="/users") Users
+        li 
+          a(href="/login") Login
+    
+    br
+    block content
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
+    script(src='/js/bootstrap.min.js')

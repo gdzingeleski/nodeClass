@@ -1,0 +1,14 @@
+body {
+  padding: 50px;
+  font: 1em "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: red;
+}
+
+a {
+  color: #00B7FF;
+}
+
+header.page {
+  margin-bottom:20px
+}
+

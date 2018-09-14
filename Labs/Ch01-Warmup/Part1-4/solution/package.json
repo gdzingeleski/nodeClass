@@ -1,0 +1,15 @@
+{
+  "name": "Part1-4",
+  "version": "1.0.0",
+  "description": "## Objectives: * Apply ESLint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Judy Lipinski",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.15.0"
+  }
+}

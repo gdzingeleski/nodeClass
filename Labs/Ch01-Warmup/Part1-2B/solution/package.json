@@ -1,0 +1,20 @@
+{
+  "name": "babel-practice",
+  "version": "1.0.0",
+  "description": "## Objectives: * Update npm * Understand package.lock * Use babel to transpile from ES6 to ES5",
+  "main": "source.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "browserify src/source.js -o dist/bundle.js",
+    "build": "babel dist/bundle.js --watch --presets @babel/preset-env --out-dir dist"
+  },
+  "author": "Judy Lipinski",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "browserify": "^16.2.2"
+  }
+}

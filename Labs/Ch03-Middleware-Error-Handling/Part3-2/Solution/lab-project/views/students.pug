@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1= title
+  
+  if (students)  
+    p List of students
+    .students.col-md-8
+    table.table#studentList
+      thead
+        th Name
+        th Email
+        th Hire Date
+      each student in students
+        tr
+          td #{student.nameFirst} #{student.nameLast}
+          td #{student.email}
+          td #{student.hireDate.format("MM/DD/YYYY")}
+ 
+  else
+    p No Students Found
+
+
