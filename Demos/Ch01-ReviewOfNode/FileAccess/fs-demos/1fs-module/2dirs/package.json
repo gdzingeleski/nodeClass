@@ -1,0 +1,14 @@
+{
+  "name": "fs-tests",
+  "version": "1.0.0",
+  "description": "Practice with fs",
+  "main": "00fileWrite.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  }
+}

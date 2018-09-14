@@ -1,0 +1,11 @@
+{
+  "name": "joi-validation",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "joi": "^13.1.0"
+  }
+}

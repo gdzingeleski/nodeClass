@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  
+  if (students)  
+    p List of students
+    ul
+      for student in students
+        li= student
+  else
+    p No Students Found
+
+

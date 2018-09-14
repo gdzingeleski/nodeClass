@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Arrays with Functions</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script>
+            console.log('Array.map()');
+            const mapValues = [1,2,3,4,5];
+            const items = mapValues.map(function(value) {
+            return "Item: " + value;
+            });
+            console.log(items);
+            console.log('');
+
+            console.log('Array.forEach()');
+            const forEachValues = [1,2,3,4,5];
+            forEachValues.forEach(function(currentValue) {
+                console.log(`The current value is ${currentValue}`);
+            });
+            console.log('');
+
+            console.log('Array.reduce()');
+            const reduceValues = [10, 40, 50];
+            let sum = 0;
+            sum = reduceValues.reduce(function(value, accum) {
+            return accum + value;
+            }, sum);
+            console.log(`Sum is ${sum}`);
+            console.log('');
+
+            console.log('Array.find()');
+            const haystack = ['Apple', 'Banana', 'Cherry'];
+            const needle = haystack.find(function(currentValue) {
+                return currentValue.startsWith('B');
+            });
+            console.log('Needle is: ' + needle);
+            console.log('');
+
+            console.log('Array.filter()');
+            const numbers = [1,2,3,4,5,6];
+            const evens = numbers.filter(function(currentValue) {
+            return currentValue % 2 == 0;
+            });
+            console.log('Evens are: ' + evens.join(', '));
+
+        </script>        
+    </body>
+</html>
