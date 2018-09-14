@@ -1,0 +1,21 @@
+{
+  "name": "browserifyModules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "browserify src/source.js -o dist/bundle.js",
+    "build": "babel dist/bundle.js --watch --presets @babel/preset-env --out-dir dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "browserify": "^16.2.2"
+  }
+}

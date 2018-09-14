@@ -1,0 +1,13 @@
+{
+  "name": "database-access",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "knex": "^0.14.2",
+    "moment": "^2.20.1",
+    "pg": "^7.4.0"
+  }
+}
